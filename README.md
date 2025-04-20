@@ -1,39 +1,48 @@
-# Assistente BW - Chatbot com OpenAI e Yahoo Finance
+# BW Assistant – Chatbot with OpenAI and Yahoo Finance
 
-Este projeto é um assistente pessoal baseado em **OpenAI** e **Yahoo Finance** que pode buscar cotações históricas de ativos financeiros e responder perguntas utilizando **GPT-4o-mini**.
+This project is a personal assistant powered by **OpenAI** and **Yahoo Finance**, capable of retrieving historical stock prices and answering questions using **GPT-4o-mini**.
 
-## 📌 Funcionalidades
+## 📌 Features
 
-- Integração com a API da OpenAI para gerar respostas inteligentes.
-- Busca de cotações históricas de ativos financeiros usando a biblioteca `yfinance`.
-- Suporte para ferramentas (`tools`) que permitem chamadas diretas a funções específicas.
-- Interface simples via terminal.
+- Integration with OpenAI's API to generate intelligent responses.
+- Fetch historical stock data using the `yfinance` library.
+- Tool support for direct function calls.
+- Simple terminal interface.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
 - Python
 - OpenAI API
 - Yahoo Finance (`yfinance`)
-- `dotenv` para carregar variáveis de ambiente
-- JSON para manipulação de dados
+- `dotenv` for loading environment variables
+- JSON for data handling
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-1. **Clone este repositório**  
+1. **Clone this repository**  
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
-2. **Crie um ambiente virtual e ative-o **
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
+
+2. **Create and activate a virtual environment**  
    ```sh
    python -m venv venv
    source venv/bin/activate  # Linux/Mac
-   venv\Scripts\activate     # Windows
-3. **Instale as dependências**
+   venv\Scripts\activate   # Windows
+   ```
+
+3. **Install dependencies**  
    ```sh
    pip install -r requirements.txt
-4. **Crie um arquivo .env e adicione sua chave da OpenAI:**
-   ```sh
+   ```
+
+4. **Create a `.env` file and add your OpenAI key**  
+   ```env
    OPENAI_API_KEY=your_api_key_here
-5. **Execute o chatbot**
+   ```
+
+5. **Run the chatbot**  
    ```sh
-   python chatbot_financas.py
+   python chatbot_finance.py
+   ```
